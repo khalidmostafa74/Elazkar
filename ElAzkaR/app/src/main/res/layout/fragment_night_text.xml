@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ninja.elazkar.nightTextFrag"
+    android:background="#303F9F"
+    android:layout_marginTop="?attr/actionBarSize"
+
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#FFF"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:id="@+id/mor_quotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#FFF"
+                android:padding="10dp"
+                android:id="@+id/mor_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:textColor="#ffffff"
+                    android:background="@drawable/round_bl"
+                    android:id="@+id/button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="Button" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            app:itemBackground="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/navigation" />
+
+
+
+
+</FrameLayout>
